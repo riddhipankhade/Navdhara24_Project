@@ -1,0 +1,12 @@
+/*animations*/
+@keyframes bigfont{
+    to{
+        font-size: 20;
+        color: #258156;
+        font-weight: bolder;
+    }
+}
+
+.int_map a:hover{
+    animation: bigfont 0.5s both;
+}
