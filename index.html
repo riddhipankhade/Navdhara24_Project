@@ -1,24 +1,27 @@
-<HTML lang="en">
-<HEAD>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Meta Parks🌿</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="style.js">
   <link rel="stylesheet" href="animation.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src = "script.js"></script>
 </head>
 
-<BODY>
+<body onclick = axis(event)>
   <!--Header section start-->
 
-  <header class="header">
+  <header class="header backfade">
 
-    <div class="logo-title">
+    <div class="logo-title fadeinfall">
       <img id="logo" src="images/logo.png" alt = "logo">
       <h1>MetaParks</h1>
     </div>
-    <nav class="navbar">
+    <nav class="navbar fade">
       <!-- home, about, interactive map, theme -->
       <a href = "index.html"> Home </a>&ensp;&ensp;|&ensp;&ensp;
       <a href = "about.html">About </a>&ensp;&ensp;|&ensp;&ensp;
@@ -29,98 +32,116 @@
   
   <main>
 
-    <!--this is the home section-->
-    <div>
+    <!--TITLE-->
     <div class="title">
-      <h1>A Virtual Tour Of Our National Parks</h1>
+      <h1>A Virtual Tour Of Our <span id="span-title">National Parks</span></h1>
       <div id="divider"></div>
-      <p><span>Meta Parks by Metamakers</span></p>
+      <p><span id="title-foot">Meta Parks by Metamakers</span></p>
     </div>
  
 
-  <!--the slideshow-->
-  <div class="slideshow-container">
-      <div class="mySlides fade">
+    <!--the slideshow-->
+    <div class="slideshow-container">
+      <div class="mySlides">
           <img src="images/11.NagarholeNationalPark.jpg" style="width:100%">
       </div>
-      <div class="mySlides fade">
+      <div class="mySlides">
           <img src="images/3.KanhaNationalPark.jpg" style="width:100%">
       </div>
-      <div class="mySlides fade">
+      <div class="mySlides">
           <img src="images/6.KazirangaNationalPark.jpg" style="width:100%">
       </div>
-      <div class="mySlides fade">
+      <div class="mySlides">
         <img src="images/8.EravikulamNationalPark.jpg" style="width:100%">
       </div>
-      <div class="mySlides fade">
+      <div class="mySlides">
       <img src="images/9.SundarbansNationalPark.jpg" style="width:100%">
       </div>
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <script src="script.js"></script>
+    </div>
+    <script src="style.js"></script>
 
-  <div id ="int_map" class = "int_map">
-    <img src = "images/map1.png"></img>
-    <div class = "Kashmir"><a href = "states/JammuAndKashmir.html" target = "_self">J&k</a></div>
-    <div class = "HP"><a href = "states/HimachalPradesh.html " target = "_self">Himachal Pradesh</a></div>
-    <div class = "Punjab"><a href = "states/Punjab.html" target = "_self">Punjab</a></div>
-    <div class = "UK"><a href = "states/Uttarkhand.html" target = "_self">Uttarakhand</a></div>
-    <div class = "Hary"><a href = "states/Haryana.html" target = "_self">Haryana</a></div>
-    <div class = "Raj"><a href = "states/Rajasthan.html" target = "_self">Rajasthan</a></div>
-    <div class = "UP"><a href = "states/UttarPradesh.html" target = "_self">Uttar Pradesh</a></div>
-    <div class = "MP"><a href = "states/MadhyaPradesh.html" target= "_self">Madhya Pradesh</a></div>
-    <div class = "GJ"><a href = "states/Gujarat.html" target = "_self">Gujarat</a></div>
-    <div class = "BH"><a href = "states/Bihar.html" target = "_self">Bihar</a></div>
-    <div class = "JH"><a href = "states/Jharkhand.html" target = "_self">Jharkhand</a></div>
-    <div class = "OD"><a href = "states/Odisha.html" target = "_self">Odisha</a></div>
-    <div class = "CH"><a  href = "states/Chattisgarh.html" target = "_self">Chattisgarh</a></div>
-    <div class = "MH"><a href = "states/Maharashtra.html" target = "_self">Maharashtra</a></div>
-    <div class = "TL"><a href = "states/Telangana.html" target = "_self">Telangana</a></div>
-    <div class = "AP"><a href = "states/AndraPradesh.html" target = "_self">Andhra Pradesh</a></div>
-    <div class = "KT"><a href = "states/karnataka.html" target = "_self">Karnataka</a></div>
-    <div class = "Goa"><a href = "states/Goa.html" target = "_self">Goa</a></div>
-    <div class = "KL"><a href = "states/Kerala.html" target = "_self">Kerela</a></div>
-    <div class = "TN"><a href = "states/TamilNadu.html" target = "_self">Tamil Nadu</a></div>
-    <div class = "SK"><a href = "states/Sikkim.html" target = "_self">Sikkim</a></div>
-    <div class = "WB"><a href = "states/WestBengal.html" target = "_self">West Bengal</a></div>
-    <div class = "Assam"><a href = "states/Assam.html" target = "_self">Assam</a></div>
-    <div class = "MG"><a href = "states/Meghalaya.html" target = "_self">Meghalaya</a></div>
-    <div class = "TP"><a href = "states/Tripura.html" target = "_self">Tripura</a></div>
-    <div class = "MZ"><a href = "states/Mizoram.html" target = "_self">Mizoram</a></div>
-    <div class = "MaP"><a href = "states/Manipur.html" target = "_self">Manipur</a></div>
-    <div class = "NL"><a href = "states/Nagaland.html" target = "_self">Nagaland</a></div>
-    <div class = "ArP"><a href = "states/ArunachalPradesh.html" target = "_self">Arunachal Pradesh</a></div>
-  </div>
-  
+    <!--MAP-->
+    <p id = "demo" >coordinates:</p>
+    
+    <div id ="int_map" class = "int_map">
+      <svg width = window.innerWidth height = window.innerHeight xmlns="http://www.w3.org/2000/svg">
+        <polygon points="555,167 545,173 535,174 526,183 526,187 543,10"/>
+      </svg>
+      <img src = "images/map1.png"></img>
+      
+      <a class = "Kashmir" href = "states/JammuAndKashmir.html" target = "_self">J&k</a>
+      <a class = "HP" href = "states/HimachalPradesh.html " target = "_self">Himachal Pradesh</a>
+      <a class = "Punjab" href = "states/Punjab.html" target = "_self">Punjab</a>
+      <a class = "UK" href = "states/Uttarkhand.html" target = "_self">Uttarakhand</a>
+      <a class = "Hary" href = "states/Haryana.html" target = "_self">Haryana</a>
+      <a class = "Raj" href = "states/Rajasthan.html" target = "_self">Rajasthan</a>
+      <a class = "UP" href = "states/UttarPradesh.html" target = "_self">Uttar Pradesh</a>
+      <a class = "MP" href = "states/MadhyaPradesh.html" target= "_self">Madhya Pradesh</a>
+      <a class = "GJ" href = "states/Gujarat.html" target = "_self">Gujarat</a>
+      <a class = "BH" href = "states/Bihar.html" target = "_self">Bihar</a>
+      <a class = "JH" href = "states/Jharkhand.html" target = "_self">Jharkhand</a>
+      <a class = "OD" href = "states/Odisha.html" target = "_self">Odisha</a>
+      <a class = "CH" href = "states/Chattisgarh.html" target = "_self">Chattisgarh</a>
+      <a class = "MH" href = "states/Maharashtra.html" target = "_self">Maharashtra</a>
+      <a class = "TL" href = "states/Telangana.html" target = "_self">Telangana</a>
+      <a class = "AP" href = "states/AndraPradesh.html" target = "_self">Andhra Pradesh</a>
+      <a class = "KT" href = "states/karnataka.html" target = "_self">Karnataka</a>
+      <a class = "Goa" href = "states/Goa.html" target = "_self">Goa</a>
+      <a class = "KL" href = "states/Kerala.html" target = "_self">Kerela</a>
+      <a class = "TN" href = "states/TamilNadu.html" target = "_self">Tamil Nadu</a>
+      <a class = "SK" href = "states/Sikkim.html" target = "_self">Sikkim</a>
+      <a class = "WB" href = "states/WestBengal.html" target = "_self">West Bengal</a>
+      <a class = "Assam" href = "states/Assam.html" target = "_self">Assam</a>
+      <a class = "MG" href = "states/Meghalaya.html" target = "_self">Meghalaya</a>
+      <a class = "TP" href = "states/Tripura.html" target = "_self">Tripura</a>
+      <a class = "MZ" href = "states/Mizoram.html" target = "_self">Mizoram</a>
+      <a class = "MaP" href = "states/Manipur.html" target = "_self">Manipur</a>
+      <a class = "NL" href = "states/Nagaland.html" target = "_self">Nagaland</a>
+      <a class = "ArP" href = "states/ArunachalPradesh.html" target = "_self">Arunachal Pradesh</a>
+      
+    </div>
+    
+
+    <script>
+      function axis(event){
+        var x = event.clientX;
+        var y = event.clientY;
+        text = x + ", " + y;
+        document.getElementById("demo").innerHTML = text;
+      }
+    </script>
+    <!--839, 563-->
   </main>
 
   <footer>
     <div class="footer">
-    <div class = "Con-text">
-      <h2>Contact Us</h2>
-      <p>Email: metamakers@gmail.com</p>
-      <p>Phone: +91 34573XXXXX</p>
-      <p>Address: Pimpri Chinchwad, Maharashtra, India</p>
+      <div class = "Con-text">
+        <h2>Contact Us</h2>
+        <p><span class="contact-info">Email:</span> metamakers@gmail.com</p>
+        <p><span  class="contact-info">Phone:</span> +91 34573XXXXX</p>
+        <p><span  class="contact-info">Address:</span>Pimpri Chinchwad, Maharashtra, India</p>
+      </div>
+
+      
+      <nav class="socialMedia">
+        <ul id="social">
+          <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> </a></li>
+        </ul>      
+      </nav>
+
+
+      <div class="footerMessage">
+        <p>Thank you for visiting our site!</p>
+        <p>&copy; 2024 MetaMakers. All rights reserved.</p>
+      </div>
+
     </div>
-
-    
-    <nav class="socialMedia">
-      <ul id="social">
-        <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> </a></li>
-    </ul>      
-    </nav>
-
-
-    <!-- <div>
-      <p>Thank you for visiting our site!</p>
-    </div> -->
-
-  </div>
   </footer>
 
-</BODY>
-</HTML>
+</body>
+</html>

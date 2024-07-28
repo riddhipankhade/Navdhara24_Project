@@ -4,9 +4,126 @@
         font-size: 20;
         color: #258156;
         font-weight: bolder;
+        opacity: 1;
     }
 }
 
-.int_map a:hover{
-    animation: bigfont 0.5s both;
+@keyframes fadeInFall{
+    0%{
+        opacity: 0;
+        margin-bottom: 100px;
+    }
+
+    50%{
+        opacity: 0.5;
+        margin-bottom: 50px;
+    }
+    
+    100%{
+        opacity: 1;
+        margin-bottom: 10px;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    20%{
+        opacity: 0.15;
+    }
+
+    30%{
+        opacity: 0.25;
+    }
+
+    40%{
+        opacity: 0.35;
+    }
+
+    50%{
+        opacity: 0.45;
+    }
+
+    60%{
+        opacity: 0.55;
+    }
+
+    70%{
+        opacity: 0.65;
+    }
+
+    80%{
+        opacity: 0.75;
+    }
+
+    90%{
+        opacity: 0.85;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundFade{
+    0%{
+        background-color: #7c938100;
+    }
+
+    30%{
+        background-color: #7c938130;
+    }
+
+    60%{
+        background-color: #7c938160;
+    }
+
+    90%{
+        background-color: #7c938190;
+    }
+
+    100%{
+        background-color: #7c9381;
+    }
+}
+
+@keyframes slideInLeft{
+    to{
+        transform: translateX(100px);
+    }
+}
+
+/*utility classes*/
+.fadeinfall{
+    animation: fadeInFall 1s linear forwards;
+}
+
+.fade{
+    animation: fadeIn 1.5s ease-in-out forwards 1 normal;
+}
+
+.backfade{
+    animation: backgroundFade 1s ease-out both 1 normal;
+}
+
+.slideinleft{
+    animation: slideInLeft 1s ease-in-out both 1 normal;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0)
+}
+
+/*direct styling*/
+.bigfont{
+    animation: bigfont 0.5s forwards linear;
+
+}
+
+.card{
+    opacity: 0.5;
+    transform: translateX(100px);
 }

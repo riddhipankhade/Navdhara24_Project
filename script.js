@@ -1,17 +1,11 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+const cards = document.querySelectorAll('.card')
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle('show', entry.isIntersecting)
+    })
+})
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) { slideIndex = 1; }
-    if (n < 1) { slideIndex = slides.length; }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slides[slideIndex-1].style.display = "block";  
-}
+cards.forEach(card=>{
+    observer.observe(card)
+})
