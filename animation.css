@@ -117,13 +117,5 @@
     transform: translateX(0)
 }
 
-/*direct styling*/
-.bigfont{
-    animation: bigfont 0.5s forwards linear;
 
-}
 
-.card{
-    opacity: 0.5;
-    transform: translateX(100px);
-}

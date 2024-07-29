@@ -16,6 +16,7 @@ html{
   justify-content: space-between;
   background-color: #7c9381;
   height: 15%;
+  box-shadow: 0 2px 30px rgb(98, 117, 98);
 }
 
 h2{
@@ -89,312 +90,116 @@ nav > a{
   position: relative;
 }
 
-.int_map{
-  flex: 0;
-  padding: 0;
-  height: 90%;
+#title span{
+  color: green;
+}
+
+#title p{
+  color: #8b968e;
+}
+#title{
+  text-align: center;
+  padding: 40px;
+  font-size: 28px;
+}
+
+#title p{
+  font-size: 16px;
+  padding-top: 3px;
+}
+
+#motivation {
   display: flex;
-  justify-content: center;
-  color: #FFFFFF00;
-  text-decoration-line: none;
-  font-size: 10%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto; /* Center the section horizontally */
+  max-width: 999px;
+  padding: 20px;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .13), 0 1px 2px 0 rgba(0, 0, 0, .11);
+  color: #0b3515;
+  font-size: 19px;
 }
 
-.int_map > img{
-  vertical-align: center;
-  height: 115%;
-  width: 50%;
-  margin-top: -6%;
-  position: absolute;
-
+#motivation h2, #motivation p {
+  max-width: 800px; /* Adjust based on your content width */
+  margin: 0;
 }
 
-.int_map .Kashmir{
-  position: absolute;
-  margin-top: 5%;
-  margin-right: 6%;
-  opacity: 0;
-  
+#motivation img.side-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px; /* Space between text and image */
 }
 
-.int_map .HP{
-  position: absolute;
-  margin-top: 8%;
-  margin-right: 3%;
-}
-.int_map .HP > a{
-  color: black;
-  text-decoration: none;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #motivation {
+    padding: 20px; /* Add padding for smaller screens */
+  }
+
+  #motivation h2, #motivation p {
+    font-size: 1em; /* Adjust font size if needed */
+  }
+
+  #motivation img.side-image {
+    margin-top: 20px;
+    max-width: 100%;
+  }
 }
 
-.int_map .Punjab{
-  position: absolute;
-  margin-top: 9%;
-  margin-right: 6%;
-}
-.int_map .Punjab > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .UK{
-  position: absolute;
-  margin-top: 10%;
-  margin-left: 2%;
-}
-.int_map .UK > a{
-  color: black;
-  text-decoration: none;
+#team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto; /* Center the section horizontally */
+  max-width: 999px;
+  padding: 20px;
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .11);
+ */
+ box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .13), 0 1px 2px 0 rgba(0, 0, 0, .11);
 }
 
-.int_map .Hary{
-  position: absolute;
-  margin-top: 12%;
-  margin-right: 5.5%;
-}
-.int_map .Hary > a{
-  color: black;
-  text-decoration: none;
+#team h2 {
+  margin: 0;
+  font-size: 1.5em;
 }
 
-.int_map .Raj{
-  position: absolute;
-  margin-top: 15%;
-  margin-right: 12%;
-}
-.int_map .Raj > a{
-  color: black;
-  text-decoration: none;
+#team p {
+  max-width: 800px; /* Adjust based on your content width */
+  margin: 0;
+  font-size: 1em;
 }
 
-.int_map .UP{
-  position: absolute;
-  margin-top: 14%;
-  margin-left: 5%;
-}
-.int_map .UP > a{
-  color: black;
-  text-decoration: none;
+#team p p {
+  margin-top: 10px; /* Space between nested paragraphs */
 }
 
-.int_map .MP{
-  position: absolute;
-  margin-top: 18.5%;
-  margin-right: 1%;
-}
-.int_map .MP > a{
-  color: black;
-  text-decoration: none;
+#team img.side-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px; /* Space between text and image */
 }
 
-.int_map .GJ{
-  position: absolute;
-  margin-top: 19%;
-  margin-right: 16.5%;
-}
-.int_map .GJ > a{
-  color: black;
-  text-decoration: none;
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #team {
+    padding: 20px; /* Add padding for smaller screens */
+  }
 
-.int_map .BH{
-  position: absolute;
-  margin-top:16%;
-  margin-left: 17%;
-}
-.int_map .BH > a{
-  color: black;
-  text-decoration: none;
-}
+  #team h2 {
+    font-size: 1.2em; /* Adjust font size if needed */
+  }
 
-.int_map .JH{
-  position: absolute;
-  margin-top: 18.5%;
-  margin-left: 15.5%;
-}
-.int_map .JH > a{
-  color: black;
-  text-decoration: none;
-}
+  #team p {
+    font-size: 0.9em; /* Adjust font size if needed */
+  }
 
-.int_map .OD{
-  position: absolute;
-  margin-top:22.5%;
-  margin-left: 15%;
-}
-.int_map .OD > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .CH{
-  position: absolute;
-  margin-top: 22%;
-  margin-left: 7%;
-}
-.int_map .CH > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .MH{
-  position: absolute;
-  margin-top: 24%;
-  margin-right: 7%;
-}
-.int_map .MH > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .TL{
-  position: absolute;
-  margin-top: 26.5%;
-  margin-left: 1%;
-}
-.int_map .TL > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .AP{
-  position: absolute;
-  margin-top: 30%;
-  margin-left: 1%;
-}
-.int_map .AP > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .KT{
-  position: absolute;
-  margin-top: 30%;
-  margin-right: 7%;
-}
-.int_map .KT > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .Goa{
-  position: absolute;
-  margin-top: 29%;
-  margin-right: 13%;
-}
-.int_map .Goa > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .KL{
-  position: absolute;
-  margin-top: 35.5%;
-  margin-right: 6%;
-}
-.int_map .KL > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .TN{
-  position: absolute;
-  margin-top: 35%;
-  margin-right: 1%;
-}
-.int_map .TN > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .SK{
-  position:absolute;
-  margin-top: 13.3%;
-  margin-left: 22%;
-}
-.int_map .SK > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .WB{
-  position: absolute;
-  margin-top: 21%;
-  margin-left: 22%;
-}
-.int_map .WB > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .Assam{
-  position: absolute;
-  margin-top: 14.8%;
-  margin-left: 31%;
-}
-.int_map .Assam > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .MG{
-  position: absolute;
-  margin-top: 16.2%;
-  margin-left: 28%;
-}
-.int_map .MG > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .TP{
-  position: absolute;
-  margin-top: 19.5%;
-  margin-left: 28%;
-}
-.int_map .TP > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .MZ{
-  position: absolute;
-  margin-top: 21%;
-  margin-left: 33.5%;
-}
-.int_map .MZ > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .MaP{
-  position: absolute;
-  margin-top: 18%;
-  margin-left: 38%;
-}
-.int_map .MaP > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .NL{
-  position: absolute;
-  margin-top: 15.3%;
-  margin-left: 40%;
-}
-.int_map .NL > a{
-  color: black;
-  text-decoration: none;
-}
-
-.int_map .ArP{
-  position: absolute;
-  margin-top: 12.3%;
-  margin-left: 37%;
-}
-.int_map .ArP > a{
-  color: black;
-  text-decoration: none;
+  #team img.side-image {
+    margin-top: 20px;
+    max-width: 100%;
+  }
 }
 
 .footer{
@@ -440,53 +245,6 @@ nav > a{
   margin: 0 20px ;
 }
 
-.slideshow-container {
-  position: relative;
-  max-width: 77%; 
-  margin: auto;
-  align-self: center;
-  padding: 2px;
-  box-sizing: border-box;
-  margin-top: -3%;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-.mySlides {
-  display: none;
-}
-
-
-@keyframes fade {
-  0% { opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 3px;
-  user-select: none;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
 .socialMedia a{
   color: rgb(33, 59, 5);
   font-size: 25px;
@@ -504,12 +262,4 @@ nav > a{
 
 .footerMessage > p{
   color: rgb(147, 153, 147);
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-#slideinfo{
-  text-align: center;
 }

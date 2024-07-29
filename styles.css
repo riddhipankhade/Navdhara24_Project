@@ -15,8 +15,17 @@ html{
   display: flex;
   justify-content: space-between;
   background-color: #7c9381;
-  height: 13%;
+  height: 15%;
   box-shadow: 0 2px 30px rgb(98, 117, 98);
+}
+
+.bodyy{
+  background-color: black;
+  color: white;
+}
+
+.card{
+  transform: translateX(100px);
 }
 
 h2{
@@ -90,6 +99,10 @@ nav > a{
   position: relative;
 }
 
+.map{
+  fill: black;
+}
+
 .int_map{
   flex: 0;
   padding: 0;
@@ -112,16 +125,15 @@ nav > a{
 .int_map > a{
   color: black;
   text-decoration: none;
-  opacity: 0;
+  opacity: 1;
 }
 
 .int_map a:hover{
   animation: bigfont 0.5s forwards linear;
 }
 
-.int_map .shape{
-  position: absolute;
-  fill: red;
+.int_map .container polygon:hover{
+  fill: pink;
 }
 
 .int_map .Kashmir{
