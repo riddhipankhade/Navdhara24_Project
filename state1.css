@@ -1,0 +1,121 @@
+
+body {
+  background: linear-gradient(135deg, 
+    rgba(195, 229, 195, 0.4) 0%, 
+    rgba(131, 196, 131, 0.4) 50%, 
+    rgba(220, 220, 220, 0.4) 100%);
+}
+
+*{
+  font-family: 'times New Roman','Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.header{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #7c9381;
+  height: 15%;
+}
+
+h2{
+  padding: 1%;
+}
+
+#logo{
+  height: 80px;
+  width: 100%;
+}
+
+.logo-title > h1{
+  padding-top: 10px;
+  padding-left: 10px;
+  align-self: center;
+}
+
+.logo-title{
+  display: flex;
+  justify-content:space-between;
+}
+
+.header .nav{
+  display: flex;
+  justify-content: space-between;
+  text-align: 'center';
+  font-family: "Arial";
+  font-weight: bold;
+ }
+ 
+ nav{
+   width: 30%;
+   font-family: 'Sans-serif';
+   height: 40%;
+   text-align: center;
+   vertical-align: center;
+   font-size: 130%;
+   color: white;
+}
+
+nav > a{
+  color: black;
+  text-decoration: none;
+}
+
+.header1{
+  text-align: center;
+  padding: 35px;
+}
+
+#title-info{
+  text-align: center;
+}
+
+main{
+  margin: 20px;
+  text-align: center;
+  padding-left: 120px;
+  padding-right: 120px;
+  font-size: large;
+}
+
+main section{
+  box-shadow: 0px 3px 6px 0px rgba(140, 149, 159, 0.15);
+  margin-bottom: 50px;
+  background-color: #f4fcdb;
+}
+
+img{
+  float: right;
+  margin: 20px;
+  width: 400px;
+}
+
+p{
+  text-align: justify;
+  font-size: px;
+  padding-right: 1px;
+  padding-left: 30px;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+#info-end{
+  height: 35px;
+}
+
+span{
+  color: rgb(48, 78, 48);
+  font-weight: 1000;
+}
+
+h3{
+  text-align: left;
+  margin-left: 20px;
+}
