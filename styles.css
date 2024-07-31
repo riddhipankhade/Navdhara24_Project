@@ -99,7 +99,104 @@ nav > a{
   position: relative;
 }
 
-.map{
+/* Responsive map container */
+.int_map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 486px;
+  margin: auto;
+}
+
+.int_map > img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adjust the link positions based on the map size */
+.int_map > a {
+  position: absolute;
+  color: black;
+  text-decoration: none;
+  font-size: 1vw;
+  transform: translate(-50%, -50%);
+}
+
+/* Link positions based on a 486px by 513px map  */ 
+ .int_map .Kashmir { top: 5%; left: 18%; }
+.int_map .HP { top: 9%; left: 22%; }
+.int_map .Punjab { top: 11%; left: 19%; }
+.int_map .UK { top: 14%; left: 25%; }
+.int_map .Hary { top: 17%; left: 20%; }
+.int_map .Raj { top: 25%; left: 14%; }
+.int_map .UP { top: 22%; left: 34%; }
+.int_map .MP { top: 36%; left: 24%; }
+.int_map .GJ { top: 40%; left: 14%; }
+.int_map .BH { top: 27%; left: 39%; }
+.int_map .JH { top: 35%; left: 36%; }
+.int_map .OD { top: 46%; left: 36%; }
+.int_map .CH { top: 48%; left: 27%; }
+.int_map .MH { top: 54%; left: 24%; }
+.int_map .TL { top: 60%; left: 28%; }
+.int_map .AP { top: 64%; left: 32%; }
+.int_map .KT { top: 68%; left: 24%; }
+.int_map .Goa { top: 70%; left: 20%; }
+.int_map .KL { top: 75%; left: 24%; }
+.int_map .TN { top: 80%; left: 28%; }
+.int_map .SK { top: 22%; left: 40%; }
+.int_map .WB { top: 47%; left: 41%; }
+.int_map .Assam { top: 31%; left: 54%; }
+.int_map .MG { top: 37%; left: 50%; }
+.int_map .TP { top: 44%; left: 48%; }
+.int_map .MZ { top: 46%; left: 57%; }
+.int_map .MaP { top: 41%; left: 63%; }
+.int_map .NL { top: 37%; left: 67%; }
+.int_map .ArP { top: 29%; left: 64%; }
+
+/* Responsive font size adjustments */
+@media (max-width: 768px) {
+  .int_map > a {
+    font-size: 2vw;
+  }
+}
+
+/* Fine-tune positions for smaller screens */
+@media (max-width: 480px) {
+  .int_map .Kashmir { top: 5%; left: 20%; }
+  .int_map .HP { top: 10%; left: 24%; }
+  .int_map .Punjab { top: 12%; left: 21%; }
+  .int_map .UK { top: 15%; left: 27%; }
+  .int_map .Hary { top: 18%; left: 22%; }
+  .int_map .Raj { top: 26%; left: 16%; }
+  .int_map .UP { top: 23%; left: 36%; }
+  .int_map .MP { top: 37%; left: 26%; }
+  .int_map .GJ { top: 42%; left: 16%; }
+  .int_map .BH { top: 28%; left: 41%; }
+  .int_map .JH { top: 36%; left: 38%; }
+  .int_map .OD { top: 48%; left: 38%; }
+  .int_map .CH { top: 50%; left: 29%; }
+  .int_map .MH { top: 56%; left: 26%; }
+  .int_map .TL { top: 62%; left: 30%; }
+  .int_map .AP { top: 66%; left: 34%; }
+  .int_map .KT { top: 70%; left: 26%; }
+  .int_map .Goa { top: 72%; left: 22%; }
+  .int_map .KL { top: 77%; left: 26%; }
+  .int_map .TN { top: 82%; left: 30%; }
+  .int_map .SK { top: 23%; left: 42%; }
+  .int_map .WB { top: 49%; left: 43%; }
+  .int_map .Assam { top: 33%; left: 56%; }
+  .int_map .MG { top: 39%; left: 52%; }
+  .int_map .TP { top: 46%; left: 50%; }
+  .int_map .MZ { top: 48%; left: 59%; }
+  .int_map .MaP { top: 43%; left: 65%; }
+  .int_map .NL { top: 39%; left: 69%; }
+  .int_map .ArP { top: 31%; left: 66%; }
+}
+
+
+/* .map{
   fill: black;
 }
 
@@ -320,7 +417,7 @@ nav > a{
   position: absolute;
   margin-top: 12.3%;
   margin-left: 37%;
-}
+} */
 
 .footer{
   box-sizing: border-box;
