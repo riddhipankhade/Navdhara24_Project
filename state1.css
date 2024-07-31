@@ -75,6 +75,13 @@ nav > a{
 
 #title-info{
   text-align: center;
+  padding-top: 3px;
+  padding-right: 10px;
+  color: rgb(148, 163, 152);
+}
+
+#state-name{
+  color: green;
 }
 
 main{

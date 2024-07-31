@@ -368,10 +368,10 @@ nav > a{
 
 .slideshow-container {
   position: relative;
-  max-width: 77%; 
+  max-width: 75%; 
   margin: auto;
   align-self: center;
-  padding: 2px;
+  padding: px;
   box-sizing: border-box;
   margin-top: -3%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
