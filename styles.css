@@ -19,15 +19,13 @@ html{
   box-shadow: 0 2px 30px rgb(98, 117, 98);
 }
 
-.bodyy{
-  background-color: black;
-  color: white;
-}
+.main > img{
+position: absolute;
+width: 100%;
+height: 210%;
+opacity: 0.25;
 
-.card{
-  transform: translateX(100px);
 }
-
 h2{
   padding: 1%;
 }
@@ -45,28 +43,26 @@ h2{
   color: #05210c;
 }
 
-
 .logo-title{
   display: flex;
   justify-content:space-between;
 }
 
-.header .nav{
+.header nav{
   display: flex;
   justify-content: space-between;
   text-align: 'center';
   font-family: "Arial";
   font-weight: bold;
+  opacity: 1;
  }
  
 nav{
    width: 30%;
-   font-family: 'Sans-serif';
    height: 40%;
    text-align: center;
    vertical-align: center;
    font-size: 130%;
-   color: white;
  }
 
 nav > a{
@@ -74,7 +70,7 @@ nav > a{
   text-decoration: none;
  }
 
- nav > a:hover{
+nav > a:hover{
   color: #bbd8c3;
  }
 
@@ -84,6 +80,7 @@ nav > a{
   font-size: 100%;
   position: relative;
   color: #083412;
+  opacity: 1;
 }
 
 #span-title{
@@ -105,14 +102,19 @@ nav > a{
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 100%;
+  width: 110%;
+  height: 90%;
   max-width: 486px;
   margin: auto;
+  opacity: 1;
 }
 
 .int_map > img {
-  width: 100%;
-  height: auto;
+  vertical-align: center;
+  height: 130%;
+  width: 130%;
+  position: absolute;
+  transform: translateX(0%);
 }
 
 /* Adjust the link positions based on the map size */
@@ -120,40 +122,46 @@ nav > a{
   position: absolute;
   color: black;
   text-decoration: none;
-  font-size: 1vw;
-  transform: translate(-50%, -50%);
+  opacity: 1;
+
+}
+
+.int_map a:hover{
+  transform-origin: bottom;
+  transition: all 0.5s;
+  animation: bigfont 0.5s ease-in-out normal both;
 }
 
 /* Link positions based on a 486px by 513px map  */ 
- .int_map .Kashmir { top: 5%; left: 18%; }
-.int_map .HP { top: 9%; left: 22%; }
-.int_map .Punjab { top: 11%; left: 19%; }
-.int_map .UK { top: 14%; left: 25%; }
-.int_map .Hary { top: 17%; left: 20%; }
-.int_map .Raj { top: 25%; left: 14%; }
-.int_map .UP { top: 22%; left: 34%; }
-.int_map .MP { top: 36%; left: 24%; }
-.int_map .GJ { top: 40%; left: 14%; }
-.int_map .BH { top: 27%; left: 39%; }
-.int_map .JH { top: 35%; left: 36%; }
-.int_map .OD { top: 46%; left: 36%; }
-.int_map .CH { top: 48%; left: 27%; }
-.int_map .MH { top: 54%; left: 24%; }
-.int_map .TL { top: 60%; left: 28%; }
-.int_map .AP { top: 64%; left: 32%; }
-.int_map .KT { top: 68%; left: 24%; }
-.int_map .Goa { top: 70%; left: 20%; }
-.int_map .KL { top: 75%; left: 24%; }
-.int_map .TN { top: 80%; left: 28%; }
-.int_map .SK { top: 22%; left: 40%; }
-.int_map .WB { top: 47%; left: 41%; }
-.int_map .Assam { top: 31%; left: 54%; }
-.int_map .MG { top: 37%; left: 50%; }
-.int_map .TP { top: 44%; left: 48%; }
-.int_map .MZ { top: 46%; left: 57%; }
-.int_map .MaP { top: 41%; left: 63%; }
-.int_map .NL { top: 37%; left: 67%; }
-.int_map .ArP { top: 29%; left: 64%; }
+.int_map .Kashmir { top: 10%; left: 38%; font-size: 18px; transform-origin: side                           ;}
+.int_map .HP { top: 19%; left: 45%; font-size: 10px;}
+.int_map .Punjab { top: 22%; left: 33%; font-size: 14px;}
+.int_map .UK { top: 25%; left: 50%; font-size: 10px; }
+.int_map .Hary { top: 27.3%; left: 37.5%; font-size: 10px;}
+.int_map .Raj { top: 35%; left: 25%; font-size: 15px;}
+.int_map .UP { top: 34%; left: 47%; }
+.int_map .MP { top: 47%; left: 37%; }
+.int_map .GJ { top: 47%; left: 23%; }
+.int_map .BH { top: 39%; left: 68%; }
+.int_map .JH { top: 45%; left: 64%; font-size: 13px;}
+.int_map .OD { top: 55%; left: 64%; }
+.int_map .CH { top: 53%; left: 56%; font-size: 50%;}
+.int_map .MH { top: 56%; left: 35%; }
+.int_map .TL { top: 65%; left: 46%; font-size: 13px;}
+.int_map .AP { top: 74.5%; left: 45%; font-size: 10px;}
+.int_map .KT { top: 79%; left: 37%; font-size: 12px;}
+.int_map .Goa { top: 72%; left: 30%; }
+.int_map .KL { top: 88%; left: 36%; font-size: 12px;}
+.int_map .TN { top: 86%; left: 45%; font-size: 15px;}
+.int_map .SK { top: 31%; left: 75%; font-size: 15px;}
+.int_map .WB { top: 49%; left: 75%; font-size: 8.5px;}
+.int_map .Assam { top: 36%; left: 86%; font-size: 16px;}
+.int_map .MG { top: 40%; left: 83%; font-size: 10px;}
+.int_map .TP { top: 45%; left: 85%; font-size: 10px;}
+.int_map .MZ { top: 48%; left: 90%; font-size: 10px;}
+.int_map .MaP { top: 42%; left: 95%; font-size: 13px;}
+.int_map .NL { top: 37%; left: 97%; font-size: 13px;}
+.int_map .ArP { top: 25%; left: 90%; }
 
 /* Responsive font size adjustments */
 @media (max-width: 768px) {
@@ -164,260 +172,36 @@ nav > a{
 
 /* Fine-tune positions for smaller screens */
 @media (max-width: 480px) {
-  .int_map .Kashmir { top: 5%; left: 20%; }
-  .int_map .HP { top: 10%; left: 24%; }
-  .int_map .Punjab { top: 12%; left: 21%; }
-  .int_map .UK { top: 15%; left: 27%; }
-  .int_map .Hary { top: 18%; left: 22%; }
-  .int_map .Raj { top: 26%; left: 16%; }
-  .int_map .UP { top: 23%; left: 36%; }
-  .int_map .MP { top: 37%; left: 26%; }
-  .int_map .GJ { top: 42%; left: 16%; }
-  .int_map .BH { top: 28%; left: 41%; }
-  .int_map .JH { top: 36%; left: 38%; }
-  .int_map .OD { top: 48%; left: 38%; }
-  .int_map .CH { top: 50%; left: 29%; }
-  .int_map .MH { top: 56%; left: 26%; }
-  .int_map .TL { top: 62%; left: 30%; }
-  .int_map .AP { top: 66%; left: 34%; }
-  .int_map .KT { top: 70%; left: 26%; }
-  .int_map .Goa { top: 72%; left: 22%; }
-  .int_map .KL { top: 77%; left: 26%; }
-  .int_map .TN { top: 82%; left: 30%; }
-  .int_map .SK { top: 23%; left: 42%; }
-  .int_map .WB { top: 49%; left: 43%; }
-  .int_map .Assam { top: 33%; left: 56%; }
-  .int_map .MG { top: 39%; left: 52%; }
-  .int_map .TP { top: 46%; left: 50%; }
-  .int_map .MZ { top: 48%; left: 59%; }
-  .int_map .MaP { top: 43%; left: 65%; }
-  .int_map .NL { top: 39%; left: 69%; }
-  .int_map .ArP { top: 31%; left: 66%; }
+  .int_map .Kashmir { top: 10%; left: 38%; font-size: 25px;}
+  .int_map .HP { top: 19%; left: 45%; font-size: 10px;}
+  .int_map .Punjab { top: 22%; left: 33%; font-size: 14px;}
+  .int_map .UK { top: 25%; left: 50%; font-size: 10px; }
+  .int_map .Hary { top: 27.3%; left: 37.5%; font-size: 10px;}
+  .int_map .Raj { top: 35%; left: 25%; font-size: 20px;}
+  .int_map .UP { top: 34%; left: 47%; }
+  .int_map .MP { top: 47%; left: 37%; }
+  .int_map .GJ { top: 47%; left: 23%; }
+  .int_map .BH { top: 39%; left: 68%; }
+  .int_map .JH { top: 45%; left: 64%; font-size: 13px;}
+  .int_map .OD { top: 55%; left: 64%; }
+  .int_map .CH { top: 53%; left: 56%; font-size: 50%;}
+  .int_map .MH { top: 56%; left: 35%; }
+  .int_map .TL { top: 65%; left: 46%; font-size: 13px;}
+  .int_map .AP { top: 74.5%; left: 45%; font-size: 10px;}
+  .int_map .KT { top: 79%; left: 37%; font-size: 12px;}
+  .int_map .Goa { top: 72%; left: 30%; }
+  .int_map .KL { top: 88%; left: 36%; font-size: 12px;}
+  .int_map .TN { top: 86%; left: 45%; font-size: 15px;}
+  .int_map .SK { top: 31%; left: 75%; font-size: 15px;}
+  .int_map .WB { top: 49%; left: 75%; font-size: 8.5px;}
+  .int_map .Assam { top: 36%; left: 86%; font-size: 16px;}
+  .int_map .MG { top: 40%; left: 83%; font-size: 10px;}
+  .int_map .TP { top: 45%; left: 85%; font-size: 10px;}
+  .int_map .MZ { top: 48%; left: 90%; font-size: 10px;}
+  .int_map .MaP { top: 42%; left: 95%; font-size: 13px;}
+  .int_map .NL { top: 37%; left: 97%; font-size: 13px;}
+  .int_map .ArP { top: 25%; left: 90%; }
 }
-
-
-/* .map{
-  fill: black;
-}
-
-.int_map{
-  flex: 0;
-  padding: 0;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  color: #FFFFFF00;
-  text-decoration-line: none;
-  font-size: 10%;
-}
-
-.int_map > img{
-  vertical-align: center;
-  height: 115%;
-  width: 50%;
-  margin-top: -6%;
-  position: absolute;
-}
-
-.int_map > a{
-  color: black;
-  text-decoration: none;
-  opacity: 1;
-}
-
-.int_map a:hover{
-  animation: bigfont 0.5s forwards linear;
-}
-
-.int_map .container polygon:hover{
-  fill: pink;
-}
-
-.int_map .Kashmir{
-  position: absolute;
-  margin-top: 5%;
-  margin-right: 6%;
-  transition-duration: 0.5s;
-  
-}
-
-.int_map .HP{
-  position: absolute;
-  margin-top: 8%;
-  margin-right: 3%;
-}
-
-.int_map .Punjab{
-  position: absolute;
-  margin-top: 9%;
-  margin-right: 6%;
-}
-
-
-.int_map .UK{
-  position: absolute;
-  margin-top: 10%;
-  margin-left: 2%;
-}
-
-
-.int_map .Hary{
-  position: absolute;
-  margin-top: 12%;
-  margin-right: 5.5%;
-}
-
-
-.int_map .Raj{
-  position: absolute;
-  margin-top: 15%;
-  margin-right: 12%;
-}
-
-
-.int_map .UP{
-  position: absolute;
-  margin-top: 14%;
-  margin-left: 5%;
-}
-
-
-.int_map .MP{
-  position: absolute;
-  margin-top: 18.5%;
-  margin-right: 1%;
-}
-
-
-.int_map .GJ{
-  position: absolute;
-  margin-top: 19%;
-  margin-right: 16.5%;
-}
-
-
-.int_map .BH{
-  position: absolute;
-  margin-top:16%;
-  margin-left: 17%;
-}
-
-
-.int_map .JH{
-  position: absolute;
-  margin-top: 18.5%;
-  margin-left: 15.5%;
-}
-
-
-.int_map .OD{
-  position: absolute;
-  margin-top:22.5%;
-  margin-left: 15%;
-}
-
-
-.int_map .CH{
-  position: absolute;
-  margin-top: 22%;
-  margin-left: 7%;
-}
-
-.int_map .MH{
-  position: absolute;
-  margin-top: 24%;
-  margin-right: 7%;
-}
-
-.int_map .TL{
-  position: absolute;
-  margin-top: 26.5%;
-  margin-left: 1%;
-}
-
-.int_map .AP{
-  position: absolute;
-  margin-top: 30%;
-  margin-left: 1%;
-}
-
-.int_map .KT{
-  position: absolute;
-  margin-top: 30%;
-  margin-right: 7%;
-}
-
-.int_map .Goa{
-  position: absolute;
-  margin-top: 29%;
-  margin-right: 13%;
-}
-
-.int_map .KL{
-  position: absolute;
-  margin-top: 35.5%;
-  margin-right: 6%;
-}
-
-.int_map .TN{
-  position: absolute;
-  margin-top: 35%;
-  margin-right: 1%;
-}
-
-.int_map .SK{
-  position:absolute;
-  margin-top: 13.3%;
-  margin-left: 22%;
-}
-
-.int_map .WB{
-  position: absolute;
-  margin-top: 21%;
-  margin-left: 22%;
-}
-
-.int_map .Assam{
-  position: absolute;
-  margin-top: 14.8%;
-  margin-left: 31%;
-}
-
-.int_map .MG{
-  position: absolute;
-  margin-top: 16.2%;
-  margin-left: 28%;
-}
-
-.int_map .TP{
-  position: absolute;
-  margin-top: 19.5%;
-  margin-left: 28%;
-}
-
-.int_map .MZ{
-  position: absolute;
-  margin-top: 21%;
-  margin-left: 33.5%;
-}
-
-.int_map .MaP{
-  position: absolute;
-  margin-top: 18%;
-  margin-left: 38%;
-}
-
-.int_map .NL{
-  position: absolute;
-  margin-top: 15.3%;
-  margin-left: 40%;
-}
-
-.int_map .ArP{
-  position: absolute;
-  margin-top: 12.3%;
-  margin-left: 37%;
-} */
 
 .footer{
   box-sizing: border-box;
@@ -446,7 +230,6 @@ nav > a{
   height: 10%;
 }
 
-
 .Con-text{
   margin-top: 0%;
 }
@@ -468,7 +251,6 @@ nav > a{
   max-width: 75%; 
   margin: auto;
   align-self: center;
-  padding: px;
   box-sizing: border-box;
   margin-top: -3%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -488,7 +270,6 @@ nav > a{
 
 
 .prev, .next {
-  cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
@@ -504,10 +285,12 @@ nav > a{
 
 .prev {
   left: 0;
+  cursor: w-resize;
 }
 
 .next {
   right: 0;
+  cursor: e-resize;
 }
 
 .socialMedia a{
