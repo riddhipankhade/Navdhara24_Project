@@ -24,13 +24,26 @@ html{
   box-shadow: 0 2px 30px rgb(98, 117, 98);
 }
 
-.main > img{
-position: absolute;
-width: 100%;
-height: 210%;
-opacity: 0.25;
-
+main {
+  position: relative;
+  flex-grow: 1; 
 }
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/premium_photo-1669740462478-135db9b990ea.avif'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.35; 
+  z-index: -1; /* Ensures the pseudo-element is behind the main content */
+}
+
 h2{
   padding: 1%;
 }
@@ -228,7 +241,6 @@ html, body{
 }
 
 footer{
-  padding-top: 35px;
   padding-bottom: -100px;
 }
 
