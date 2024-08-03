@@ -102,6 +102,30 @@
         <polygon class = "c" points = "196,70 205,69 208,75 217,81 226,91 247,86 254,85 258,89 256,99 252,105 250,110 244,112 248,120 248,123 251,129 244,133 240,129 234,130 229,126 226,128 219,122 210,126 209,132 207,134 184,122 184,104 189,101 187,93 174,85 174,81 181,75 189,75" />
       </svg>
       
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <script>
+        // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+      </script>
+
     </div>
     <!--839, 563-->
   </main>
