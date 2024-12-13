@@ -1,6 +1,6 @@
 # **Overview**
 
-the Metaparks is a website designed to be a helpful guide to navigate trought diffrent national parks in india virtually. it provides deatils about the parks in the repective states and facilities available around them, additionaly being an awareness initiative to highlight the diverse national parks of india to the people of the world and promoting their conservation.
+The Metaparks is a website designed to be a helpful guide to navigate trought diffrent national parks in india virtually. it provides deatils about the parks in the repective states and facilities available around them, additionaly being an awareness initiative to highlight the diverse national parks of india to the people of the world and promoting their conservation.
 
 ## **Features**
 
